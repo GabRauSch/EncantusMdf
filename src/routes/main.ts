@@ -18,19 +18,20 @@ const upload = multer({
 router.get('/', UserController.index);
 
 
-router.get('/usuarios', UserController.users); //done
-router.get('/usuario/:id', UserController.userById) //done
+router.get('/usuarios', UserController.users); 
+router.get('/usuario/:id', UserController.userById) 
 
-router.get('/desenhos', DesenhoController.desenhos); // done           // query
-router.post('/desenhos', upload.single('foto'), DesenhoController.novoDesenho) // done
-router.delete('/desenho/delete/:id', DesenhoController.deletar); // done
+router.get('/desenhos', DesenhoController.desenhos); 
+router.get('/desenho/:id', DesenhoController.desenhoById)
+router.post('/desenhos', upload.single('foto'), DesenhoController.novoDesenho) 
+router.delete('/desenho/delete/:id', DesenhoController.deletar); 
 
 
-router.get('/pedidos', PedidosController.pedidos)  // done          // mais recentes apenas ****
+router.get('/pedidos', PedidosController.pedidos)  
 router.get('/pedidos/numero/:number', PedidosController.pedidosByNumber)
-router.post('/pedido', PedidosController.novoPedido) // done
-router.delete('/pedido/:id', PedidosController.deleteById) // done
-router.get('/pedido/:id', PedidosController.pedidoById) // em andamento;
+router.post('/pedido', PedidosController.novoPedido) 
+router.delete('/pedido/:id', PedidosController.deleteById) 
+router.get('/pedido/:id', PedidosController.pedidoById) 
 
 
 // router.get('/register', AuthController.register);

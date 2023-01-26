@@ -27,6 +27,18 @@ export const desenhos = async (req: Request, res: Response)=>{
     return;
 }
 
+export const desenhoById = async (req: Request, res: Response)=>{
+    let {id} = req.params;
+
+    const desenho = await Desenho.findByPk(id);
+
+    if(desenho){
+        res.json(desenho);
+        return;
+    }
+    
+} 
+
 export const novoDesenho = async (req: Request, res: Response)=>{ 
     consoleTurnedOn 
     ? console.log('id=novoDesenho\n Criar novo desenho\n parametros=null \n autorização necessaria\n DesenhoController') 
