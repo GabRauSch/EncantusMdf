@@ -1,0 +1,28 @@
+.footer-display{
+    display: flex;
+    background-color: #420;
+    color: #fff;
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+    padding: 30px;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+}
+.info-message{
+    font-size: 23px;
+}
+.info-item{
+   margin-top: 20px;
+   font-size: 15px;
+}
+.contact-title{
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.contact-item{
+    margin-bottom: 5px
+}

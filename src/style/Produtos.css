@@ -1,0 +1,31 @@
+.products{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    flex-direction: column;
+}
+
+.product-item{   
+    display: flex;
+    margin: 10px;
+    border: 2px solid #333;
+    padding: 10px;
+    border-radius: 10px;
+    align-items: center;
+}
+.product-item-info{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+}
+.product-image{
+    width: 100px;
+    margin: 5px
+}
+.product-name{
+    font-weight: bold;
+    border-top: 1px solid #333;
+    padding: 10px;
+    border-bottom: 1px solid #333;
+    font-size: 24px;
+}

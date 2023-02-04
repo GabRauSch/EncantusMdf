@@ -1,0 +1,118 @@
+
+
+.major-information{
+    display: flex;
+    padding: 20px 50px;
+    width: 100%;
+    align-items: center;
+}
+.name-information{
+    font-size: 30px;
+    font-weight: bold;
+}
+.status-information{
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;
+}
+.status-item{
+    padding: 10px;
+    background-color: #800;
+    border-radius: 20px;
+    color: #fff;
+    margin-right: 20px;
+    font-size: 24px;
+    width: 200px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.received-status{
+    margin-left: 5px;
+}
+
+
+.detailed-information{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+
+.information-item{
+    width: 100%;
+    border: 3px solid #333;
+    border-radius: 30px;
+    display: flex;
+    overflow: hidden;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.request-info{
+    flex: 1;
+    display: flex;
+}
+
+.desenho-info{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    justify-content: space-around;
+    flex: 1;
+    align-items: center;
+}   
+
+.pedido-item-info{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    padding: 10px;
+}
+.desenho-name{
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+}
+.desenho-info-item{
+    margin-bottom: 10px;
+    display: none;
+}
+
+
+.tamanho{
+    font-size: 24px;
+}
+/**/
+.pedido-item-info{
+    display: none;
+}
+.price-info{
+    margin-top: 20px;
+}
+.price-info-item{
+    display: flex;
+    justify-content: space-between;
+}
+
+.batata{
+    background-color: #800;
+    padding: 20px;
+    width: 150px;
+    z-index: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff
+}
+.done{
+    background-color: #080;
+    padding: 20px;
+    width: 150px;
+    z-index: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff
+}

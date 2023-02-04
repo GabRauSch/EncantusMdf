@@ -1,0 +1,40 @@
+.pannel-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px
+}
+.client-item{
+    border: 2px solid #333;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.client-photo{
+    width: 50px;
+    height: 50px;
+    background-color: #090;
+    border-radius: 100px;
+}
+
+.client-info{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px;
+}
+.add-item{
+    border: 2px solid #333;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #060;
+    cursor: pointer;
+}
+.cadastrar{
+    font-size: 25px;
+    color: #fff;
+}

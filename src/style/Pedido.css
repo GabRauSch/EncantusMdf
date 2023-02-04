@@ -1,0 +1,48 @@
+
+
+
+.create-order{
+    padding: 10px 50px;
+    border: 2px solid #a80;
+    width: fit-content;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.create-order:hover{
+    background-color: #fa0;
+}
+
+
+
+.pannel-display{
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.item{
+    background-color: #a85;;
+    box-shadow: 2px 2px 4px #333;
+    border-top-left-radius: 10px;
+    padding: 20px 10px;
+    cursor: pointer;
+}
+.item:hover{
+    background-color: #862;
+}
+
+.item-title{
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+.item-description{
+    font-size: 10px;
+    margin: 10px;
+}
+.item-value{
+    margin-top: 10px;
+    text-align: end;
+}

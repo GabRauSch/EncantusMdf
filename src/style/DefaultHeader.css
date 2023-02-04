@@ -1,0 +1,15 @@
+.header-display{
+    width: inherit;
+    padding: 40px;
+    display: flex;
+}
+.logo-area{
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+.profile-area{
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
