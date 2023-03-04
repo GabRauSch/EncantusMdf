@@ -13,7 +13,7 @@ export const users = async (req: Request, res: Response)=>{
     consoleTurnedOn ? console.log(`id=users\n chamada de todos os usuarios\n autorização necessária\n ${__filename} `) : null;
     let users = await Usuario.findAll({
         attributes: {
-            exclude: ['id', 'codigo', 'senha']
+            exclude: ['id', 'senha']
         }
     });
 
@@ -27,7 +27,7 @@ export const userById = async (req: Request, res: Response)=>{
 
     let user = await Usuario.findOne({
         where:{
-            codigo: id
+            id
         },
         attributes:{
             exclude: ['id', 'senha']

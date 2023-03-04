@@ -26,13 +26,17 @@ router.get('/desenho/:id', DesenhoController.desenhoById)
 router.post('/desenhos', upload.single('foto'), DesenhoController.novoDesenho) 
 router.delete('/desenho/delete/:id', DesenhoController.deletar); 
 
+router.get('/itensPedidos', PedidosController.itensPedidos)
+router.get('/itensPedidos/:number', PedidosController.itensPedidosByNumber)
+router.post('/itensPedidos', PedidosController.novoItemPedido);
+router.delete('/itensPedidos/:id', PedidosController.deleteItemById)
+
 
 router.get('/pedidos', PedidosController.pedidos)  
-router.get('/pedidos/numero/:number', PedidosController.pedidosByNumber)
+router.get('/pedidos/:id', PedidosController.pedidoById)
 router.post('/pedido', PedidosController.novoPedido) 
-router.delete('/pedido/:id', PedidosController.deleteById) 
-router.get('/pedido/:id', PedidosController.pedidoById) 
-
+router.put('/pedido/:id', PedidosController.updatePedido)
+router.delete('/pedido/:id', PedidosController.deletePedidoById) 
 
 // router.get('/register', AuthController.register);
 // router.get('/login', AuthController.register)

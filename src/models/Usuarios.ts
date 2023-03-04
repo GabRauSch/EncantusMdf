@@ -2,21 +2,21 @@ import { Model, DataTypes } from "sequelize";
 import sequelize from "../instances/mysql";
 
 interface UserInstance extends Model {
-    codigo: number,
+    id: number,
     nome: string,
     senha: string,
     email: string,
-    Empresa_codigo: number,
-    clientes_codigo: number
+    empresa_id: number,
+    permission: number
 }
 
 export const Usuario = sequelize.define<UserInstance>('Usuarios', {
-    codigo: {type: DataTypes.INTEGER},
+    id: {type: DataTypes.INTEGER, primaryKey: true},
     nome: {type: DataTypes.STRING},
     senha: {type: DataTypes.STRING},
     email: {type: DataTypes.STRING},
-    Empresa_codigo: {type: DataTypes.INTEGER},
-    clientes_codigo: {type: DataTypes.INTEGER}
+    empresa_id: {type: DataTypes.INTEGER},
+    permission: {type: DataTypes.INTEGER}
 },{
     tableName: "usuarios",
     timestamps: false

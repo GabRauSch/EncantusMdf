@@ -2,13 +2,13 @@ import { Model, DataTypes } from "sequelize";
 import sequelize from "../instances/mysql";
 
 interface EmpresaInstance extends Model {
-    codigo: number,
+    id: number,
     nome: string,
     cnpj: string
 }
 
 export const Empresa = sequelize.define<EmpresaInstance>('Empresa', {
-    codigo: {type: DataTypes.INTEGER},
+    id: {type: DataTypes.INTEGER, primaryKey: true, autoIncrement: true},
     nome: {type: DataTypes.STRING},
     cnpj: {type: DataTypes.STRING}
 },{

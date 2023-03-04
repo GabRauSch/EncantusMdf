@@ -2,9 +2,9 @@ import { Model, DataTypes } from "sequelize";
 import sequelize from "../instances/mysql";
 
 interface ClientesInstance extends Model {
-  codigo: number,
+  id: number,
   nome: string,
-  Empresa_codigo: number,
+  Empresa_id: number,
   contato: string,
   email: string,
   fone: string,
@@ -17,9 +17,9 @@ interface ClientesInstance extends Model {
 }
 
 export const Cliente = sequelize.define<ClientesInstance>('Cliente', {
-  codigo: {type: DataTypes.INTEGER},
+  id: {type: DataTypes.INTEGER},
   nome: {type: DataTypes.STRING},
-  Empresa_codigo: {type: DataTypes.INTEGER},
+  Empresa_id: {type: DataTypes.INTEGER},
   contato: {type: DataTypes.STRING},
   email: {type: DataTypes.STRING},
   fone: {type: DataTypes.STRING},
