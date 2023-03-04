@@ -23,7 +23,12 @@ export const Pedidos = ()=>{
                 </>
             </Panel>
         </div>
-        <NovoPedidoPanel display="flex"/>
+        <NovoPedidoPanel display="none" action="/novopedidobakende" content={{
+            title: ['Novo Pedido', 'novo-pedido'], 
+            buttons: [
+                {title: 'Adicionar Desenho', type:'select' ,source: 'DESENHOS DATABASE'} 
+            ]
+        }}/>
         </>
         
     )

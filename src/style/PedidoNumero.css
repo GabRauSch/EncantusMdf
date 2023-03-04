@@ -41,7 +41,7 @@
 
 .information-item{
     width: 100%;
-    border: 3px solid #333;
+    box-shadow: 1px 1px 3px #000;
     border-radius: 30px;
     display: flex;
     overflow: hidden;
@@ -59,7 +59,6 @@
     padding: 10px;
     justify-content: space-around;
     flex: 1;
-    align-items: center;
 }   
 
 .pedido-item-info{
@@ -68,32 +67,47 @@
     width: 400px;
     padding: 10px;
 }
+.desenho-name-display{
+    display: flex;
+    align-items: flex-end;
+    padding: 10px;
+    justify-content: center;
+    width: 100%;
+}
 .desenho-name{
-    font-size: 25px;
+    font-size: 20px;
     font-weight: bold;
-    text-align: center;
+    flex: 1;
 }
 .desenho-info-item{
-    margin-bottom: 10px;
-    display: none;
+    display: flex;
+    opacity: .8;
+    font-weight: 100;
+    font-size: 14px;
+    padding: 5px;
+    justify-content: space-between;
 }
-
+.desenho-info-item-price{
+    font-size: 16px;
+    font-weight: bold;
+}
 
 .tamanho{
     font-size: 24px;
 }
-/**/
-.pedido-item-info{
-    display: none;
+.status-item.finish{
+    opacity: .5;
+    background-color: #000;
+    cursor: no-drop;    
 }
-.price-info{
-    margin-top: 20px;
-}
-.price-info-item{
-    display: flex;
-    justify-content: space-between;
+.information-total{
+    font-size: 24px;
+    padding: 20px;
+    text-align: end;
+    width: 100%;
 }
 
+/**/
 .batata{
     background-color: #800;
     padding: 20px;

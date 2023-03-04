@@ -1,5 +1,7 @@
 export const ItemPorId = ()=>{
     return (
-        <div>Home</div>
+        <div className="container column">
+            irem
+        </div>
     )
 }

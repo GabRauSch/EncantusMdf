@@ -10,11 +10,109 @@
     z-index: 999;
 }
 .novo-pedido-panel{
-    width: 800px;
-    height: 500px;
+    width:1200px;
+    height: 600px;
     box-shadow: 2px 4px 10px #000;
     background-color: #fff;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
+    padding: 50px 100px;
+}
+/*form*/
+.novo-pedido-title{
+    outline: 0;
+    border: 0;
+    border-bottom: 2px solid #333;
+    font-size: 24px;
+    text-align: center;
+}
+.novo-pedido-quest{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    border: 0;
+}
+.novo-pedido-quest select{
+    outline: 0;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 5px;
+    font-size: 15px;
+}
+.novo-pedido-quest input{
+    outline: 0;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 5px;
+    font-size: 15px;
+}
+.template-button{
+    cursor: pointer;
+    padding: 10px;
+    font-size: 15px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    margin: 10px;
+    background-color: rgba(152, 112, 0, 1);
+    color: #fff;
+    min-width: 300px;
+    width: fit-content;
+    text-align: center;
+    align-self: center;
+}
+.template-button:hover{
+    opacity: .9;
+}
+.novo-pedido-desenho{
+    display: flex;
+    border: 2px solid #333;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 20px;
+}
+.novo-pedido-desenho-title{
+    font-weight: bold;
+    width: 100px;
+}
+.novo-pedido-desenhos-list{
+    overflow: scroll;
+    height: 250px;
+}
+.novo-pedido-desenho-info{
+    display: flex;
+    margin: 0 10px;
+    justify-content: center;
+    flex: 1;
+}
+.novo-pedido-desenho-desc{
+    display: flex;
+    margin: 0 10px;
+    justify-content: center;
+    flex: 2;
+}
+.novo-pedido-desenho-info input{
+    width: 50px;
+    text-align: end;
+    outline: 0;
+    border: 0;
+}
+.save-button-area{
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.save-button{
+    background-color: #070;
+    font-size: 20px;
+    border: 2px solid #333;
+    border-radius: 20px;
+    padding: 10px;
+    color: #fff;
+    width: 200px;
+    text-align: center;
+    align-self: flex-end;
+    justify-self: flex-end;
+    cursor: pointer;
 }
